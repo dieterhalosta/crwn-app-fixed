@@ -12,6 +12,7 @@ import {
 import {
   SignInContainer,
   SignInTitle,
+  SignInSpan,
   ButtonsBarContainer
 } from "./sign-in.style";
 
@@ -38,7 +39,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
   return (
     <SignInContainer>
       <SignInTitle>I already have an account</SignInTitle>
-      <span>Sign in with your email and password</span>
+      <SignInSpan>Sign in with your email and password</SignInSpan>
 
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -64,7 +65,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
             onClick={googleSignInStart}
             isGoogleSignIn
           >
-            Sign in with Google
+            Google Sign in
           </CustomButton>
         </ButtonsBarContainer>
       </form>
